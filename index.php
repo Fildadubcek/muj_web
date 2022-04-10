@@ -12,17 +12,20 @@
 <body>
     <div id="full_site">
         <div id="header">
-            <div id="name">
-                <h1>Filip Dubček</h1>
-            </div>
+
+
+
             <div id="menu">
+                <h1>Filip Dubček</h1>
                 <ul>
-                    <li><a>O mně</a></li>
-                    <li><a>Moje práce</a></li>
-                    <li><a>Spolupráce</a></li>
-                    <li><a>Contacts</a></li>
+                    <li><a href="/includes/index.php">O mně</a></li>
+                    <li><a href="/includes/work.php">Moje práce</a></li>
+                    <li><a href="/includes/together.php">Spolupráce</a></li>
+                    <li><a href="/includes/contacts.php">Kontakty</a></li>
                 </ul>
+
             </div>
+            <div>&nbsp;</div>
         </div>
         <div id="info">
             <h1>Ahoj! Já jsem Filip Dubček</h1>
@@ -34,8 +37,9 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit in dolores, ab molestias quis libero accusantium voluptatem fugiat. Magnam perspiciatis laudantium officiis sequi cum reprehenderit fugiat doloremque eligendi sapiente suscipit.</p>
         </div>
         <div id="footer">
-            <img src="/img/facebook.png" height="50px" width="60px">
-            <img src="/img/instagram.png" height="50px" width="70px">
+            <img src="/img/facebook.png" height="50px" width="50px">
+            <img src="/img/instagram.png" height="50px" width="50px">
+            <img src="/img/tiktok.png" height="50px" width="50px">
         </div>
     </div>
 
