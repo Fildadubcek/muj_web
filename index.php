@@ -16,12 +16,24 @@
                 <div id="menu">
                     <h1>FILIP DUBČEK</h1>
                     <ul>
-                        <li><a href="/includes/index.php">O mně</a></li>
-                        <li><a href="/includes/work.php">Moje práce</a></li>
-                        <li><a href="/includes/together.php">Spolupráce</a></li>
-                        <li><a href="/includes/contacts.php">Kontakty</a></li>
+                        <li><a href="./">O mně</a></li>
+                        <li><a href="?page=work">Moje práce</a></li>
+                        <li><a href="?page=together">Spolupráce</a></li>
+                        <li><a href="?page=contacts">Kontakty</a></li>
                     </ul>
-
+                <?php 
+                $page = filter_input(INPUT_GET, "page");
+                if (!isset($page)){
+                    $page = "about";
+                } 
+                $file ='includes/' . $page . '.php';
+                if (file_exists($file)) {
+                    include_once $file;
+                }
+                else {
+                    include_once 'includes/error.php';
+                }
+                ?>
                 </div>
                 <div class="clear">&nbsp;</div>
             </div>
@@ -44,9 +56,9 @@
                     <h1>Kde mě můžeš najít?</h1>
                 </div>
                 <div id="vpravo">
-                    <a href="https://www.facebook.com/filip.dubcek/" target="_blank"><img src="/img/facebook.png" height="50px" width="50px"></a>
-                    <a href="https://www.instagram.com/filda_dubcek/" target="_blank"><img src="/img/instagram.png" height="50px" width="50px"></a>
-                    <a href="https://www.tiktok.com/@kamenchytilvlak" target="_blank"><img src="/img/tiktok.png" height="50px" width="50px"></a>
+                    <a href="https://www.facebook.com/filip.dubcek/" target="_blank"><img class="icons" src="/img/facebook.png" height="50px" width="50px"></a>
+                    <a href="https://www.instagram.com/filda_dubcek/" target="_blank"><img class="icons" src="/img/instagram.png" height="50px" width="50px"></a>
+                    <a href="https://www.tiktok.com/@kamenchytilvlak" target="_blank"><img class="icons" src="/img/tiktok.png" height="50px" width="50px"></a>
                 </div>
 
             </div>
