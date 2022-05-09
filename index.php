@@ -21,32 +21,28 @@
                         <li><a href="?page=together">Spolupráce</a></li>
                         <li><a href="?page=contacts">Kontakty</a></li>
                     </ul>
-                <?php 
-                $page = filter_input(INPUT_GET, "page");
-                if (!isset($page)){
-                    $page = "about";
-                } 
-                $file ='includes/' . $page . '.php';
-                if (file_exists($file)) {
-                    include_once $file;
-                }
-                else {
-                    include_once 'includes/error.php';
-                }
-                ?>
+                    <?php
+                    $page = filter_input(INPUT_GET, "page");
+                    if (!isset($page)) {
+                        $page = "about";
+                    }
+                    $file = 'includes/' . $page . '.php';
+                    if (file_exists($file)) {
+                        include_once $file;
+                    } else {
+                        include_once 'includes/error.php';
+                    }
+                    ?>
                 </div>
                 <div class="clear">&nbsp;</div>
             </div>
             <div class="clear">
-               
+
                 <div id="info">
-                    <h1>I am Filip Dubček</h1>
+                    <h1>I am <span id="velky">Filip Dubček</span> </h1>
                     <h2>And I'm a Programmer</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque laboriosam minima magni temporibus error, quae natus ex eaque libero consequuntur voluptates itaque vel, iure dolore dolorem. Tempore placeat laboriosam doloremque!</p>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas inventore accusantium veritatis illum illo officia aliquid tempore dolor ratione laboriosam, asperiores, eius corrupti! Quaerat laborum, atque eos aliquam voluptas aliquid!</p>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, eveniet cupiditate quas aliquam, praesentium asperiores ex tenetur ad est odio eum mollitia porro debitis assumenda repellat impedit magni sequi nulla.</p>
-                      
-            </div>
+               
+                </div>
             </div>
 
 
@@ -62,8 +58,8 @@
                 </div>
 
             </div>
-    </div>
-
+        </div>
+<
 
 
 
