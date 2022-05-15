@@ -18,7 +18,7 @@ body {
 
 #background {
     width: 100%;
-    background-color: grey;
+    background-color: #b8b8b800;
     height: 100vh;
     background-image: url(/img/filda_upravený.png);
     background-repeat: no-repeat;
@@ -41,8 +41,8 @@ body {
 }
 
 #info {
+    margin-top: 12%;
     color: black;
-    margin-top: 15%;
     margin-right: 15%;
     margin-left: 3%;
     width: 40%;
@@ -51,6 +51,7 @@ body {
     text-align: center;
     line-height: 4rem;
     padding: 2% 0% 2% 0%;
+    clear: both;
 
 }
 
@@ -171,10 +172,22 @@ li {
         transform: rotate(-15deg);
     }
 }
-
+@media screen and (max-width:800px){
+    #info {
+        float: none;
+        background-color: white;
+        opacity: 0.5;
+        margin:auto;
+        font-size: 2%;
+    }
+}
 @media screen and (max-width:800px) {
     #info {
         float: none;
+        background-color: white;
+        opacity: 0.5;
+        margin:auto;
+        font-size: 2%;
     }
 
     #info h1 {
@@ -185,6 +198,7 @@ li {
         text-align: left;
         margin: 0;
         width: 100%;
+        height: auto;
     }
 
     li {
@@ -206,5 +220,10 @@ li {
         float: none;
         font-size: 2rem;
     }
-
+    .pata_li {
+        float:none;
+    }
+    .pata_p {
+        float:right;
+    }
 }
