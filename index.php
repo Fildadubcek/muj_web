@@ -18,12 +18,12 @@
                 <div id="menu">
                     <h1 id="logo">Filip Dubček</h1>
 
-                    <ul>
-                        <li><a href="./">About</a></li>
-                        <li><a href="?page=contacts">Contact</a></li>
-                        <li><a href="?page=together">Cooperation</a></li>
-                        <li><a href="?page=work">Gallery</a></li>
-                        <li><a href="?page=feedback">Feedback</a></li>
+                    <ul id="menu_ul">
+                        <li class="menu_li"><a href="./">About</a></li>
+                        <li class="menu_li"><a href="?page=contacts">Contact</a></li>
+                        <li class="menu_li"><a href="?page=together">Cooperation</a></li>
+                        <li class="menu_li"><a href="?page=work">Gallery</a></li>
+                        <li class="menu_li"><a href="?page=feedback">Feedback</a></li>
                     </ul>
                 </div>
             </div>
@@ -57,16 +57,16 @@ if (file_exists($file)) {
 
 
 <div id="footer">
-<ul id="pata_ul">
-    <li class="pata_li"><a class="pata_a" href="https://twitter.com/julesforrest">Twitter</a></li>
-    <li class="pata_li"><a class="pata_a" href="https://codepen.io/julesforrest">Codepen</a></li>
-    <li class="pata_li"><a class="pata_a" href="mailto:julesforrest@gmail.com">Email</a></li>
-    <li class="pata_li"><a class="pata_a" href="https://dribbble.com/julesforrest">Dribbble</a></li>
-    <li class="pata_li"><a class="pata_a" href="https://github.com/julesforrest">Github</a></li>
-    <li class="pata_li">
-      <p id="pata_p">👋</p>
-    </li>
-  </ul>
+    <ul id="pata_ul">
+        <li class="pata_li"><a class="pata_a" href="https://twitter.com/julesforrest">Twitter</a></li>
+        <li class="pata_li"><a class="pata_a" href="https://codepen.io/julesforrest">Codepen</a></li>
+        <li class="pata_li"><a class="pata_a" href="mailto:julesforrest@gmail.com">Email</a></li>
+        <li class="pata_li"><a class="pata_a" href="https://dribbble.com/julesforrest">Dribbble</a></li>
+        <li class="pata_li"><a class="pata_a" href="https://github.com/julesforrest">Github</a></li>
+        <li class="pata_li">
+            <p id="pata_p">👋</p>
+        </li>
+    </ul>
 
 </div>
 

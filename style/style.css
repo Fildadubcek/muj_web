@@ -93,16 +93,16 @@ body {
 #footer {
     bottom:0;
 }
-ul {
+#menu_ul {
     width: 70%;
     margin-left: 50%;
     margin-top: 1.5%;
+    list-style-type:none;
 }
 
-li {
+.menu_li {
     width: 12%;
     float: left;
-    list-style-type: none;
     text-align: center;
 }
 
@@ -118,6 +118,7 @@ li {
     grid-gap: 24px;
     justify-items: center;
     margin: auto;
+    width: 100%;
 }
 
 @media (min-width: 500px) {
@@ -129,10 +130,11 @@ li {
 .pata_a {
     color: white;
     text-decoration: none;
-    box-shadow: inset 0 -1px 0 hsla(0, 0%, 100%, 0.4);
 }
 .pata_li {
     float:left;
+    list-style-type: none;
+    margin-left: 5%;
 }
 .pata_li:last-child {
     grid-column: 1 / 2;
@@ -172,37 +174,32 @@ li {
         transform: rotate(-15deg);
     }
 }
-@media screen and (max-width:800px){
-    #info {
-        float: none;
-        background-color: white;
-        opacity: 0.5;
-        margin:auto;
-        font-size: 2%;
-    }
-}
+
 @media screen and (max-width:800px) {
     #info {
-        float: none;
-        background-color: white;
-        opacity: 0.5;
+        float: left;
         margin:auto;
-        font-size: 2%;
+        margin-top: 30%;
+        font-size: 40px;
+        line-height: normal;
     }
 
     #info h1 {
-        font-size: 2.5rem;
+        font-size: 40px;
+    }
+    #info h2 {
+        font-size: 20px;
     }
 
-    #menu {
-        text-align: left;
-        margin: 0;
-        width: 100%;
-        height: auto;
+    .menu_li {
+        width:5%;
+        font-size: small;
+        margin-left:20%;
     }
-
-    li {
-        float: none;
+    #menu_ul {
+        float:left;
+        width:50%;
+        margin:0;
     }
 
     #menu h1 {
@@ -217,11 +214,15 @@ li {
     }
 
     #logo {
-        float: none;
-        font-size: 2rem;
+        font-size: 700;
+        margin-top: 10%;
+        margin-left: 2%;
+    }
+    #pata_ul {
+        float:left;
     }
     .pata_li {
-        float:none;
+        float:left;
     }
     .pata_p {
         float:right;
