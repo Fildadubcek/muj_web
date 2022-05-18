@@ -1,0 +1,14 @@
+body {
+    text-align: center;
+}
+#background {
+    background-image: none;
+}
+h1 {
+    margin:auto;
+    margin-top: 10%;
+    font-size: 10rem;
+}
+#try {
+    font-size: 5rem;
+}

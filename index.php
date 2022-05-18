@@ -20,10 +20,10 @@
                     <label for="hamburger">&#9776;</label>
                     <input type="checkbox" id="hamburger" />
                     <div id="hamitems">
-                        <a href="?page=about">About</a>
+                        <a id="contact" href="?page=about">About</a>
                         <a href="?page=contacts">Contact</a>
-                        <a href="?page=together">Cooperation</a>
-                        <a href="?page=work">Gallery</a>
+                        <a href="?page=cooperation">Cooperation</a>
+                        <a href="?page=gallery">Gallery</a>
                         <a href="?page=feedback">Feedback</a>
                     </div>
                 </nav>
@@ -44,18 +44,17 @@ if (file_exists($file)) {
 }
 ?>
 
-<div class="clear">&nbsp;</div>
+
 
 
 
 
 <div id="footer">
     <ul id="pata_ul">
-        <li class="pata_li"><a class="pata_a" href="https://twitter.com/julesforrest">Twitter</a></li>
-        <li class="pata_li"><a class="pata_a" href="https://codepen.io/julesforrest">Codepen</a></li>
-        <li class="pata_li"><a class="pata_a" href="mailto:julesforrest@gmail.com">Email</a></li>
-        <li class="pata_li"><a class="pata_a" href="https://dribbble.com/julesforrest">Dribbble</a></li>
-        <li class="pata_li"><a class="pata_a" href="https://github.com/julesforrest">Github</a></li>
+        <li class="pata_li"><a class="pata_a" href="https://github.com/Fildadubcek">Github</a></li>
+        <li class="pata_li"><a class="pata_a" href="https://www.facebook.com/filip.dubcek/">Facebook</a></li>
+        <li class="pata_li"><a class="pata_a" href="mailto:dubcekf@gmail.com">Gmail</a></li>
+        <li class="pata_li"><a class="pata_a" href="https://www.instagram.com/filda_dubcek/">Instagram</a></li>
         <li class="pata_li">
             <p id="pata_p">👋</p>
         </li>

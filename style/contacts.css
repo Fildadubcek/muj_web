@@ -1,0 +1,39 @@
+#background {
+    background-image: none; 
+    background-color: 0; 
+}
+.black {
+    background-color: black;
+    opacity: 0.9;
+    color:rgb(161, 161, 161);
+    height:100vh;
+    width:100%;
+    text-align: center;
+}
+.filip {
+    padding-top: 14%;
+    font-size: 4rem;
+}
+.phone {
+    font-size: 2rem;
+    padding-top: 3%;
+
+}
+@media screen and (max-width:1000px) {
+    .filip {
+        padding-top: 33%;
+        font-size: 2rem;
+    }
+    .phone {
+        padding-top: 1.5%;
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width:768px) {
+    .filip {
+        padding-top: 40%;
+    }
+    .phone {
+        padding-top: 1.5%;
+    }
+}

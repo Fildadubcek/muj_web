@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-<div class="clear">
+<div class="black">
 
 <div id="info">
     <h1>Hello, I am <br><span id="velky">Filip Dubček</span> </h1>
