@@ -35,7 +35,7 @@ body {
 
 
 #header {
-    height: 10vh;
+   
     width: 100%;
 
 }
@@ -84,8 +84,8 @@ body {
     font-size: 2rem;
 }
 
-#menu {
-    height:7vh;
+#header {
+
     overflow: hidden;
     background-color: rgb(172, 172, 172);
 
@@ -93,23 +93,58 @@ body {
 #footer {
     bottom:0;
 }
-#menu_ul {
-    width: 70%;
-    margin-left: 50%;
-    margin-top: 1.5%;
-    list-style-type:none;
+#hamnav {
+    width: 100%;;
+    background: rgb(67, 67, 67);
 }
-
-.menu_li {
-    width: 12%;
-    float: left;
-    text-align: center;
+#hamnav label, #hamburger {
+    display:none;
 }
-
-#menu a {
+#hamitems {
+    display: flex;
+}
+#hamitems a {
+    padding:10px;
+    color: #fff;
     text-decoration: none;
-    color: black;
-    font-size: large;
+    text-align: center;
+    flex-grow: 1;
+    flex-basis: 0;
+    
+}
+#hamitems a:hover {
+    background: #8a0000;
+    transition-duration:0.2s ;
+    
+}
+
+
+@media screen and (max-width:768px) {
+    #hamitems {
+        display: block;
+    }
+    #hamitems a {
+        display:block;
+        width:100%;
+        box-sizing: border-box;
+        border-top: 1px solid #333;
+    }
+    #hamnav label  {
+        display: inline-block;
+        color: #fff;
+        background: #8a0000;
+        font-size: 1.2em;
+        font-style: normal;
+        padding:10px;
+        cursor: pointer;
+    }
+    #hamitems {
+        display: none;
+    }
+    #hamnav input:checked ~ #hamitems {
+        display:block;
+        
+    }
 }
 /*pata*/
 #pata_ul {
@@ -174,33 +209,40 @@ body {
         transform: rotate(-15deg);
     }
 }
-
+@media screen and (max-width:1200px) {
+    #info {
+        float:left;
+        width:20%;
+        line-height: normal;
+    }
+    #info h1 {
+        font-size: 50px;
+    }
+    #info h2 {
+        font-size: 30px;
+    }
+}
 @media screen and (max-width:800px) {
     #info {
+        width:20%;
         float: left;
         margin:auto;
         margin-top: 30%;
+        margin-left:5%;
         font-size: 40px;
         line-height: normal;
+        clear:both;
     }
 
     #info h1 {
         font-size: 40px;
+        margin:0;
     }
     #info h2 {
         font-size: 20px;
-    }
-
-    .menu_li {
-        width:5%;
-        font-size: small;
-        margin-left:20%;
-    }
-    #menu_ul {
-        float:left;
-        width:50%;
         margin:0;
     }
+
 
     #menu h1 {
         float: left;

@@ -15,17 +15,18 @@
     <div id="full_site">
         <div id="background">
             <div id="header">
-                <div id="menu">
-                    <h1 id="logo">Filip Dubček</h1>
-
-                    <ul id="menu_ul">
-                        <li class="menu_li"><a href="./">About</a></li>
-                        <li class="menu_li"><a href="?page=contacts">Contact</a></li>
-                        <li class="menu_li"><a href="?page=together">Cooperation</a></li>
-                        <li class="menu_li"><a href="?page=work">Gallery</a></li>
-                        <li class="menu_li"><a href="?page=feedback">Feedback</a></li>
-                    </ul>
-                </div>
+                <nav id="hamnav">
+                    
+                    <label for="hamburger">&#9776;</label>
+                    <input type="checkbox" id="hamburger" />
+                    <div id="hamitems">
+                        <a href="?page=about">About</a>
+                        <a href="?page=contacts">Contact</a>
+                        <a href="?page=together">Cooperation</a>
+                        <a href="?page=work">Gallery</a>
+                        <a href="?page=feedback">Feedback</a>
+                    </div>
+                </nav>
             </div>
 
 </body>
@@ -45,14 +46,6 @@ if (file_exists($file)) {
 
 <div class="clear">&nbsp;</div>
 
-<div class="clear">
-
-    <div id="info">
-        <h1>I am <span id="velky">Filip Dubček</span> </h1>
-        <h2>And I'm a Programmer</h3>
-
-    </div>
-</div>
 
 
 
