@@ -1,3 +1,10 @@
+<?php 
+$page = filter_input(INPUT_GET, "page");
+
+if (!isset($page)) {
+    $page = "about";
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +12,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="style/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <title>Můj Web</title>
@@ -13,7 +20,7 @@
 
 <body>
     <div id="full_site">
-        <div id="background">
+        <div <?php if ($page == 'about') {?> class="background"<?php } ?>>
             <div id="header">
                 <nav id="hamnav">
                     
@@ -29,13 +36,9 @@
                 </nav>
             </div>
 
-</body>
 
 <?php
-$page = filter_input(INPUT_GET, "page");
-if (!isset($page)) {
-    $page = "about";
-}
+
 $file = 'includes/' . $page . '.php';
 if (file_exists($file)) {
     include_once $file;
