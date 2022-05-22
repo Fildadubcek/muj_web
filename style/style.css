@@ -27,16 +27,19 @@ body {
     position: relative;
 
 }
+
 .black {
     background-color: black;
-    padding-top:2%;
+    padding-top: 2%;
 }
+
 .images {
-    display:block;
-    margin:auto;
+    display: block;
+    margin: auto;
     width: 60%;
-    margin-bottom:2% ;
+    margin-bottom: 2%;
 }
+
 .nadpis {
     font-size: 4rem;
 }
@@ -148,14 +151,13 @@ body {
 
 @media screen and (max-width:768px) {
     #hamnav {
-        position: absolute;
-        z-index: 100;
+        height: auto;
     }
     #hamitems {
         display: block;
     }
-    #info
-    #hamitems a {
+
+   #hamitems a {
         display: block;
         width: 100%;
         box-sizing: border-box;
@@ -274,9 +276,7 @@ body {
 }
 
 @media screen and (max-width:800px) {
-    .background {
-        display: flex;
-    }
+
     #info {
         background-color: white;
         opacity: 0.7;
@@ -285,6 +285,7 @@ body {
         font-size: 40px;
         line-height: normal;
     }
+
     #info h1 {
         font-size: 40px;
         margin: 0;
@@ -294,15 +295,6 @@ body {
         font-size: 20px;
         margin: 0;
     }
-
-
-    #menu h1 {
-        float: left;
-        position: relative;
-        margin: 0;
-        width: 100%;
-    }
-    
 
     #background {
         background-size: cover;

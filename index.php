@@ -27,7 +27,7 @@ if (!isset($page)) {
                     <label for="hamburger">&#9776;</label>
                     <input type="checkbox" id="hamburger" />
                     <div id="hamitems">
-                        <a id="contact" href="?page=about">About</a>
+                        <a href="?page=about">About</a>
                         <a href="?page=contacts">Contact</a>
                         <a href="?page=cooperation">Cooperation</a>
                         <a href="?page=gallery">Gallery</a>
